@@ -22,9 +22,29 @@
 		022A3078285B4CCE005847C6 /* NetworkSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3077285B4CCE005847C6 /* NetworkSessionProtocol.swift */; };
 		022A307A285B4D53005847C6 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3079285B4D53005847C6 /* NetworkSession.swift */; };
 		022A307C285B4EFC005847C6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A307B285B4EFC005847C6 /* NetworkClient.swift */; };
+		022A3086285B58B8005847C6 /* ProductsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3080285B58B8005847C6 /* ProductsModule.swift */; };
+		022A3087285B58B8005847C6 /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3081285B58B8005847C6 /* ProductsPresenter.swift */; };
+		022A3088285B58B8005847C6 /* ProductsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3082285B58B8005847C6 /* ProductsRouter.swift */; };
+		022A3089285B58B8005847C6 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3083285B58B8005847C6 /* ProductsViewController.swift */; };
+		022A308A285B58B8005847C6 /* ProductsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3084285B58B8005847C6 /* ProductsAssembly.swift */; };
+		022A308B285B58B8005847C6 /* ProductsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3085285B58B8005847C6 /* ProductsInteractor.swift */; };
+		022A308F285B5930005847C6 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A308E285B5930005847C6 /* ProductService.swift */; };
+		022A3092285B59FD005847C6 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3091285B59FD005847C6 /* ProductModel.swift */; };
+		022A3094285B5B49005847C6 /* RestProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3093285B5B49005847C6 /* RestProductService.swift */; };
+		022A3097285B6122005847C6 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A3096285B6122005847C6 /* Localizable.swift */; };
+		022A309B285B6158005847C6 /* Localize.strings in Resources */ = {isa = PBXBuildFile; fileRef = 022A309D285B6158005847C6 /* Localize.strings */; };
+		022A30A0285B9E7B005847C6 /* Cells+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A309F285B9E7B005847C6 /* Cells+Register.swift */; };
+		022A30A3285BA2E3005847C6 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30A2285BA2E3005847C6 /* ProductTableViewCell.swift */; };
+		022A30A5285BA445005847C6 /* Style+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30A4285BA445005847C6 /* Style+Label.swift */; };
+		022A30A8285BA63E005847C6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 022A30A7285BA63E005847C6 /* Kingfisher */; };
+		022A30B0285BABD5005847C6 /* ProductDetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30AA285BABD5005847C6 /* ProductDetailsModule.swift */; };
+		022A30B1285BABD5005847C6 /* ProductDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30AB285BABD5005847C6 /* ProductDetailsPresenter.swift */; };
+		022A30B2285BABD5005847C6 /* ProductDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30AC285BABD5005847C6 /* ProductDetailsRouter.swift */; };
+		022A30B3285BABD5005847C6 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30AD285BABD5005847C6 /* ProductDetailsViewController.swift */; };
+		022A30B4285BABD5005847C6 /* ProductDetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30AE285BABD5005847C6 /* ProductDetailsAssembly.swift */; };
+		022A30B5285BABD5005847C6 /* ProductDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30AF285BABD5005847C6 /* ProductDetailsInteractor.swift */; };
 		029688AF2858D68A005510F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029688AE2858D68A005510F5 /* AppDelegate.swift */; };
 		029688B12858D68A005510F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029688B02858D68A005510F5 /* SceneDelegate.swift */; };
-		029688B32858D68A005510F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029688B22858D68A005510F5 /* ViewController.swift */; };
 		029688B92858D68A005510F5 /* Adidas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 029688B72858D68A005510F5 /* Adidas.xcdatamodeld */; };
 		029688BB2858D68C005510F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029688BA2858D68C005510F5 /* Assets.xcassets */; };
 		029688BE2858D68C005510F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029688BC2858D68C005510F5 /* LaunchScreen.storyboard */; };
@@ -66,10 +86,29 @@
 		022A3077285B4CCE005847C6 /* NetworkSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionProtocol.swift; sourceTree = "<group>"; };
 		022A3079285B4D53005847C6 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
 		022A307B285B4EFC005847C6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		022A3080285B58B8005847C6 /* ProductsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModule.swift; sourceTree = "<group>"; };
+		022A3081285B58B8005847C6 /* ProductsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
+		022A3082285B58B8005847C6 /* ProductsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRouter.swift; sourceTree = "<group>"; };
+		022A3083285B58B8005847C6 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		022A3084285B58B8005847C6 /* ProductsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAssembly.swift; sourceTree = "<group>"; };
+		022A3085285B58B8005847C6 /* ProductsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsInteractor.swift; sourceTree = "<group>"; };
+		022A308E285B5930005847C6 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		022A3091285B59FD005847C6 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		022A3093285B5B49005847C6 /* RestProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestProductService.swift; sourceTree = "<group>"; };
+		022A3096285B6122005847C6 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		022A309C285B6158005847C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localize.strings; sourceTree = "<group>"; };
+		022A309F285B9E7B005847C6 /* Cells+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cells+Register.swift"; sourceTree = "<group>"; };
+		022A30A2285BA2E3005847C6 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		022A30A4285BA445005847C6 /* Style+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+Label.swift"; sourceTree = "<group>"; };
+		022A30AA285BABD5005847C6 /* ProductDetailsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsModule.swift; sourceTree = "<group>"; };
+		022A30AB285BABD5005847C6 /* ProductDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsPresenter.swift; sourceTree = "<group>"; };
+		022A30AC285BABD5005847C6 /* ProductDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsRouter.swift; sourceTree = "<group>"; };
+		022A30AD285BABD5005847C6 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		022A30AE285BABD5005847C6 /* ProductDetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsAssembly.swift; sourceTree = "<group>"; };
+		022A30AF285BABD5005847C6 /* ProductDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsInteractor.swift; sourceTree = "<group>"; };
 		029688AB2858D68A005510F5 /* Adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		029688AE2858D68A005510F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		029688B02858D68A005510F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		029688B22858D68A005510F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		029688B82858D68A005510F5 /* Adidas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Adidas.xcdatamodel; sourceTree = "<group>"; };
 		029688BA2858D68C005510F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		029688BD2858D68C005510F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +129,7 @@
 				022A3053285A50FF005847C6 /* SnapKit in Frameworks */,
 				02F68BA8285A0CC900D3B4C8 /* Alamofire in Frameworks */,
 				02F68BAB285A0D1B00D3B4C8 /* Macaroni in Frameworks */,
+				022A30A8285BA63E005847C6 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +198,7 @@
 		022A3066285B330A005847C6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				022A308C285B5916005847C6 /* Services */,
 				022A307D285B5076005847C6 /* UI */,
 				022A3074285B4BEC005847C6 /* Protocols */,
 				022A307B285B4EFC005847C6 /* NetworkClient.swift */,
@@ -169,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				022A306D285B360F005847C6 /* Style+Stack.swift */,
+				022A30A4285BA445005847C6 /* Style+Label.swift */,
 			);
 			path = StyleElements;
 			sourceTree = "<group>";
@@ -200,6 +242,101 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		022A307E285B57B5005847C6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				022A30A9285BABB5005847C6 /* ProductDetails */,
+				022A307F285B57ED005847C6 /* Products */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		022A307F285B57ED005847C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				022A30A1285BA2A6005847C6 /* Cells */,
+				022A3090285B59EC005847C6 /* Entity */,
+				022A3080285B58B8005847C6 /* ProductsModule.swift */,
+				022A3081285B58B8005847C6 /* ProductsPresenter.swift */,
+				022A3082285B58B8005847C6 /* ProductsRouter.swift */,
+				022A3083285B58B8005847C6 /* ProductsViewController.swift */,
+				022A3084285B58B8005847C6 /* ProductsAssembly.swift */,
+				022A3085285B58B8005847C6 /* ProductsInteractor.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		022A308C285B5916005847C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				022A308D285B591E005847C6 /* ProductService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		022A308D285B591E005847C6 /* ProductService */ = {
+			isa = PBXGroup;
+			children = (
+				022A308E285B5930005847C6 /* ProductService.swift */,
+				022A3093285B5B49005847C6 /* RestProductService.swift */,
+			);
+			path = ProductService;
+			sourceTree = "<group>";
+		};
+		022A3090285B59EC005847C6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				022A3091285B59FD005847C6 /* ProductModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		022A3095285B610F005847C6 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				022A3098285B6134005847C6 /* LocalizedStrings */,
+				022A3096285B6122005847C6 /* Localizable.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		022A3098285B6134005847C6 /* LocalizedStrings */ = {
+			isa = PBXGroup;
+			children = (
+				022A309D285B6158005847C6 /* Localize.strings */,
+			);
+			path = LocalizedStrings;
+			sourceTree = "<group>";
+		};
+		022A309E285B9E60005847C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				022A309F285B9E7B005847C6 /* Cells+Register.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		022A30A1285BA2A6005847C6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				022A30A2285BA2E3005847C6 /* ProductTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		022A30A9285BABB5005847C6 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				022A30AA285BABD5005847C6 /* ProductDetailsModule.swift */,
+				022A30AB285BABD5005847C6 /* ProductDetailsPresenter.swift */,
+				022A30AC285BABD5005847C6 /* ProductDetailsRouter.swift */,
+				022A30AD285BABD5005847C6 /* ProductDetailsViewController.swift */,
+				022A30AE285BABD5005847C6 /* ProductDetailsAssembly.swift */,
+				022A30AF285BABD5005847C6 /* ProductDetailsInteractor.swift */,
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
 		029688A22858D68A005510F5 = {
 			isa = PBXGroup;
 			children = (
@@ -223,12 +360,14 @@
 		029688AD2858D68A005510F5 /* Adidas */ = {
 			isa = PBXGroup;
 			children = (
+				022A309E285B9E60005847C6 /* Extensions */,
+				022A3095285B610F005847C6 /* Localization */,
+				022A307E285B57B5005847C6 /* Modules */,
 				022A3071285B499C005847C6 /* DI */,
 				022A3066285B330A005847C6 /* Networking */,
 				022A305B285A77DF005847C6 /* Common */,
 				022A305A285A77D2005847C6 /* AppDelegate */,
 				022A3054285A5A87005847C6 /* DesignSystem */,
-				029688B22858D68A005510F5 /* ViewController.swift */,
 				029688BA2858D68C005510F5 /* Assets.xcassets */,
 				029688BC2858D68C005510F5 /* LaunchScreen.storyboard */,
 				029688BF2858D68C005510F5 /* Info.plist */,
@@ -275,6 +414,7 @@
 				02F68BAA285A0D1B00D3B4C8 /* Macaroni */,
 				022A3052285A50FF005847C6 /* SnapKit */,
 				022A306A285B334B005847C6 /* NVActivityIndicatorView */,
+				022A30A7285BA63E005847C6 /* Kingfisher */,
 			);
 			productName = Adidas;
 			productReference = 029688AB2858D68A005510F5 /* Adidas.app */;
@@ -353,6 +493,7 @@
 				02F68BA9285A0D1B00D3B4C8 /* XCRemoteSwiftPackageReference "Macaroni" */,
 				022A3051285A50FF005847C6 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				022A3069285B334B005847C6 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				022A30A6285BA63E005847C6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 029688AC2858D68A005510F5 /* Products */;
 			projectDirPath = "";
@@ -372,6 +513,7 @@
 			files = (
 				029688BE2858D68C005510F5 /* LaunchScreen.storyboard in Resources */,
 				029688BB2858D68C005510F5 /* Assets.xcassets in Resources */,
+				022A309B285B6158005847C6 /* Localize.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,21 +538,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				029688B32858D68A005510F5 /* ViewController.swift in Sources */,
+				022A3088285B58B8005847C6 /* ProductsRouter.swift in Sources */,
+				022A308B285B58B8005847C6 /* ProductsInteractor.swift in Sources */,
 				022A305F285A79A9005847C6 /* BaseNavigationController.swift in Sources */,
+				022A308A285B58B8005847C6 /* ProductsAssembly.swift in Sources */,
 				022A3078285B4CCE005847C6 /* NetworkSessionProtocol.swift in Sources */,
 				029688B92858D68A005510F5 /* Adidas.xcdatamodeld in Sources */,
+				022A3097285B6122005847C6 /* Localizable.swift in Sources */,
 				022A3059285A5AD7005847C6 /* Applicable.swift in Sources */,
+				022A3086285B58B8005847C6 /* ProductsModule.swift in Sources */,
+				022A30A3285BA2E3005847C6 /* ProductTableViewCell.swift in Sources */,
 				022A3068285B331F005847C6 /* NetworkingActivity.swift in Sources */,
 				022A3073285B49D2005847C6 /* RestContainer.swift in Sources */,
+				022A30B1285BABD5005847C6 /* ProductDetailsPresenter.swift in Sources */,
+				022A3089285B58B8005847C6 /* ProductsViewController.swift in Sources */,
+				022A30A5285BA445005847C6 /* Style+Label.swift in Sources */,
 				029688AF2858D68A005510F5 /* AppDelegate.swift in Sources */,
+				022A3094285B5B49005847C6 /* RestProductService.swift in Sources */,
+				022A30A0285B9E7B005847C6 /* Cells+Register.swift in Sources */,
 				022A307C285B4EFC005847C6 /* NetworkClient.swift in Sources */,
 				022A3076285B4C0D005847C6 /* NetworkRouterProtocol.swift in Sources */,
 				022A3062285A7B7C005847C6 /* BaseViewController.swift in Sources */,
 				022A3065285B2F0B005847C6 /* BaseControllerProtocols.swift in Sources */,
+				022A308F285B5930005847C6 /* ProductService.swift in Sources */,
+				022A30B0285BABD5005847C6 /* ProductDetailsModule.swift in Sources */,
+				022A30B5285BABD5005847C6 /* ProductDetailsInteractor.swift in Sources */,
+				022A30B4285BABD5005847C6 /* ProductDetailsAssembly.swift in Sources */,
+				022A30B3285BABD5005847C6 /* ProductDetailsViewController.swift in Sources */,
 				029688B12858D68A005510F5 /* SceneDelegate.swift in Sources */,
+				022A3092285B59FD005847C6 /* ProductModel.swift in Sources */,
 				022A3056285A5A96005847C6 /* Style.swift in Sources */,
+				022A3087285B58B8005847C6 /* ProductsPresenter.swift in Sources */,
 				022A307A285B4D53005847C6 /* NetworkSession.swift in Sources */,
+				022A30B2285BABD5005847C6 /* ProductDetailsRouter.swift in Sources */,
 				022A306E285B360F005847C6 /* Style+Stack.swift in Sources */,
 				022A3070285B3739005847C6 /* NetworkingMessage.swift in Sources */,
 			);
@@ -449,6 +609,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		022A309D285B6158005847C6 /* Localize.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022A309C285B6158005847C6 /* en */,
+			);
+			name = Localize.strings;
+			sourceTree = "<group>";
+		};
 		029688BC2858D68C005510F5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -764,6 +932,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		022A30A6285BA63E005847C6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		02F68BA6285A0CC900D3B4C8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -792,6 +968,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 022A3069285B334B005847C6 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
 			productName = NVActivityIndicatorView;
+		};
+		022A30A7285BA63E005847C6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 022A30A6285BA63E005847C6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		02F68BA7285A0CC900D3B4C8 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
