@@ -8,7 +8,7 @@
 import Alamofire
 
 protocol ProductService {
-    func retrieveProduct(completion: @escaping (Result<[ProductModel], Error>) -> Void)
+    func retrieveProducts(completion: @escaping (Result<[ProductModel], Error>) -> Void)
 }
 
 extension RequestRouter {

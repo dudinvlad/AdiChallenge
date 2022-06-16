@@ -5,6 +5,9 @@
   Created by Vladislav Dudin on 16.06.2022.
   
 */
-
+// MARK: - Products
 "productsNavigationTitle" = "Adidas";
 "productsSearchPlaceholder" = "Search";
+
+// MARK: - Product Details
+"productAddReviewButtonTitle" = "Add review";
