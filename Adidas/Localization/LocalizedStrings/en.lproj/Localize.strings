@@ -1,0 +1,10 @@
+/* 
+  Localize.strings
+  Adidas
+
+  Created by Vladislav Dudin on 16.06.2022.
+  
+*/
+
+"productsNavigationTitle" = "Adidas";
+"productsSearchPlaceholder" = "Search";

@@ -17,4 +17,25 @@ class RestContainer {
         self.baseReviewURL = reviewURL
         self.baseURL = baseURL
     }
+
+    // MARK: - Services -
+
+    private lazy var productService: ProductService = RestProductService(restClient: NetworkClient(baseURL: baseURL))
+
+    // MARK: - Modules -
+
+    private lazy var productsAssembly: ProductsModule.ModuleAssembly = .init()
+
+    func build() -> Container {
+        let container = Container()
+
+        // MARK: - Modules
+
+        container.register { [productsAssembly] () -> ProductsModule.ModuleAssemblying in productsAssembly }
+
+        // MARK: - Services
+        container.register { [productService] () -> ProductService in productService }
+
+        return container
+    }
 }
