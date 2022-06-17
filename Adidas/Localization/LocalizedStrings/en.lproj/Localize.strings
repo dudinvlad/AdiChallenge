@@ -11,3 +11,11 @@
 
 // MARK: - Product Details
 "productAddReviewButtonTitle" = "Add review";
+"productReviewTitle" = "Rating - ";
+"productDetailsNavigationTitle" = "Product Details";
+
+// MARK: - Add Review
+"addReviewTextFieldPlaceholder" = "Write a review here...";
+"addReviewPlaceholder" = "Rating";
+"addReviewSendButtonTitle" = "Send Review";
+"addReviewNavigationTitle" = "Add Review";

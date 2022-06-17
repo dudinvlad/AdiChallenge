@@ -27,6 +27,7 @@ class RestContainer {
 
     private lazy var productsAssembly: ProductsModule.ModuleAssembly = .init()
     private lazy var productDetailsAssembly: ProductDetailsModule.ModuleAssembly = .init()
+    private lazy var addReviewAssembly: AddReviewModule.ModuleAssembly = .init()
 
     // MARK: - Public -
 
@@ -37,6 +38,7 @@ class RestContainer {
 
         container.register { [productsAssembly] () -> ProductsModule.ModuleAssemblying in productsAssembly }
         container.register { [productDetailsAssembly] () -> ProductDetailsModule.ModuleAssemblying in productDetailsAssembly }
+        container.register { [addReviewAssembly] () -> AddReviewModule.ModuleAssemblying in addReviewAssembly }
 
         // MARK: - Services
         container.register { [productService] () -> ProductService in productService }

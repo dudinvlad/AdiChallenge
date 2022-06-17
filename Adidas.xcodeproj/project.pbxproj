@@ -48,6 +48,12 @@
 		022A30CA285BCA41005847C6 /* RestProductReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30C9285BCA41005847C6 /* RestProductReviewService.swift */; };
 		022A30CC285BCA55005847C6 /* ProductReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30CB285BCA55005847C6 /* ProductReviewService.swift */; };
 		022A30D0285BCECD005847C6 /* ProductReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30CF285BCECD005847C6 /* ProductReviewTableViewCell.swift */; };
+		022A30D8285BD943005847C6 /* AddReviewModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D2285BD943005847C6 /* AddReviewModule.swift */; };
+		022A30D9285BD943005847C6 /* AddReviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D3285BD943005847C6 /* AddReviewPresenter.swift */; };
+		022A30DA285BD943005847C6 /* AddReviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D4285BD943005847C6 /* AddReviewRouter.swift */; };
+		022A30DB285BD943005847C6 /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D5285BD943005847C6 /* AddReviewViewController.swift */; };
+		022A30DC285BD943005847C6 /* AddReviewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D6285BD943005847C6 /* AddReviewAssembly.swift */; };
+		022A30DD285BD943005847C6 /* AddReviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D7285BD943005847C6 /* AddReviewInteractor.swift */; };
 		029688AF2858D68A005510F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029688AE2858D68A005510F5 /* AppDelegate.swift */; };
 		029688B12858D68A005510F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029688B02858D68A005510F5 /* SceneDelegate.swift */; };
 		029688B92858D68A005510F5 /* Adidas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 029688B72858D68A005510F5 /* Adidas.xcdatamodeld */; };
@@ -116,6 +122,12 @@
 		022A30C9285BCA41005847C6 /* RestProductReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestProductReviewService.swift; sourceTree = "<group>"; };
 		022A30CB285BCA55005847C6 /* ProductReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewService.swift; sourceTree = "<group>"; };
 		022A30CF285BCECD005847C6 /* ProductReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewTableViewCell.swift; sourceTree = "<group>"; };
+		022A30D2285BD943005847C6 /* AddReviewModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewModule.swift; sourceTree = "<group>"; };
+		022A30D3285BD943005847C6 /* AddReviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewPresenter.swift; sourceTree = "<group>"; };
+		022A30D4285BD943005847C6 /* AddReviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewRouter.swift; sourceTree = "<group>"; };
+		022A30D5285BD943005847C6 /* AddReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
+		022A30D6285BD943005847C6 /* AddReviewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewAssembly.swift; sourceTree = "<group>"; };
+		022A30D7285BD943005847C6 /* AddReviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewInteractor.swift; sourceTree = "<group>"; };
 		029688AB2858D68A005510F5 /* Adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		029688AE2858D68A005510F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		029688B02858D68A005510F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +267,7 @@
 		022A307E285B57B5005847C6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				022A30D1285BD929005847C6 /* AddReview */,
 				022A30B6285BB50A005847C6 /* ProductDetails */,
 				022A307F285B57ED005847C6 /* Products */,
 			);
@@ -374,6 +387,19 @@
 				022A30CF285BCECD005847C6 /* ProductReviewTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		022A30D1285BD929005847C6 /* AddReview */ = {
+			isa = PBXGroup;
+			children = (
+				022A30D2285BD943005847C6 /* AddReviewModule.swift */,
+				022A30D3285BD943005847C6 /* AddReviewPresenter.swift */,
+				022A30D4285BD943005847C6 /* AddReviewRouter.swift */,
+				022A30D5285BD943005847C6 /* AddReviewViewController.swift */,
+				022A30D6285BD943005847C6 /* AddReviewAssembly.swift */,
+				022A30D7285BD943005847C6 /* AddReviewInteractor.swift */,
+			);
+			path = AddReview;
 			sourceTree = "<group>";
 		};
 		029688A22858D68A005510F5 = {
@@ -579,9 +605,15 @@
 			files = (
 				022A3088285B58B8005847C6 /* ProductsRouter.swift in Sources */,
 				022A308B285B58B8005847C6 /* ProductsInteractor.swift in Sources */,
+				022A30DC285BD943005847C6 /* AddReviewAssembly.swift in Sources */,
+				022A30DB285BD943005847C6 /* AddReviewViewController.swift in Sources */,
 				022A305F285A79A9005847C6 /* BaseNavigationController.swift in Sources */,
 				022A308A285B58B8005847C6 /* ProductsAssembly.swift in Sources */,
+				022A30D8285BD943005847C6 /* AddReviewModule.swift in Sources */,
 				022A3078285B4CCE005847C6 /* NetworkSessionProtocol.swift in Sources */,
+				022A30DA285BD943005847C6 /* AddReviewRouter.swift in Sources */,
+				022A30D9285BD943005847C6 /* AddReviewPresenter.swift in Sources */,
+				022A30DD285BD943005847C6 /* AddReviewInteractor.swift in Sources */,
 				029688B92858D68A005510F5 /* Adidas.xcdatamodeld in Sources */,
 				022A30C4285BC572005847C6 /* UIView+Draw.swift in Sources */,
 				022A30CA285BCA41005847C6 /* RestProductReviewService.swift in Sources */,

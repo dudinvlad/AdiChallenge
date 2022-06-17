@@ -67,5 +67,6 @@ enum Style {
     // MARK: - Font -
     enum Font {
         static let system14: UIFont = .systemFont(ofSize: 14)
+        static let systemBold14: UIFont = .boldSystemFont(ofSize: 14)
     }
 }

@@ -18,6 +18,8 @@ struct ProductDetailsModule {
 
     enum Localize: String, Localizable {
         case productAddReviewButtonTitle
+        case productReviewTitle
+        case productDetailsNavigationTitle
     }
 }
 

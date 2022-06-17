@@ -86,16 +86,10 @@ extension Module {
             initialSetup()
         }
 
-        override func viewDidAppear(_ animated: Bool) {
-            super.viewDidAppear(animated)
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
 
-            output?.didAppear()
-        }
-
-        override func viewDidDisappear(_ animated: Bool) {
-            super.viewDidDisappear(animated)
-
-            output?.didDisappear()
+            output?.willAppear()
         }
     }
 }
@@ -119,6 +113,7 @@ private extension Controller {
         containerStack.setCustomSpacing(20, after: tableView)
 
         makeConstraints()
+        title = ProductDetailsModule.Localize.productDetailsNavigationTitle.localized
     }
 
     private func makeConstraints() {
@@ -133,6 +128,9 @@ private extension Controller {
         }
         productImageView.snp.makeConstraints { make in
             make.height.equalTo(250)
+        }
+        tableView.snp.makeConstraints { make in
+            make.height.equalTo(300)
         }
     }
 }
@@ -159,6 +157,4 @@ extension Controller: UITableViewDataSource {
 
         return cell
     }
-
-
 }

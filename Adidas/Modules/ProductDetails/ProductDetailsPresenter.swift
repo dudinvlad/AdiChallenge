@@ -54,7 +54,7 @@ extension Presenter: Module.InteractorOutput {
         view.showNetworking(error: error)
     }
 
-    func didLoad() {
+    func willAppear() {
         guard let productId = product?.id else { return }
 
         view.showActivity()

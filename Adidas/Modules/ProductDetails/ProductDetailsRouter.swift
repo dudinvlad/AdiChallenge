@@ -16,13 +16,17 @@ extension Module {
         // MARK: - Dependencies
 
         weak var viewController: UIViewController!
+        var addReviewAssembly: AddReviewModule.ModuleAssemblying
 
-        required init() { }
+        required init(addReview: AddReviewModule.ModuleAssemblying) {
+            self.addReviewAssembly = addReview
+        }
     }
 }
 
 extension Router: Module.RouterInput {
     func presentAddReviewScren(with item: ProductModel?) {
-        
+        addReviewAssembly.product = item
+        viewController.navigationController?.pushViewController(addReviewAssembly.assemble(), animated: true)
     }
 }
