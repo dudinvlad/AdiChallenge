@@ -28,7 +28,7 @@ protocol ProductsAssemblyProtocol {
     func assemble() -> UIViewController
 }
 
-// MARK: - View
+// MARK: - Controller
 protocol ProductsViewInputProtocol: BaseControllerInput {
     func reloadData()
 }

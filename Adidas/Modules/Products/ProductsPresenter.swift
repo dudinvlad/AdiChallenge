@@ -25,7 +25,6 @@ extension Module {
 
         private var searchedDataSource: [ProductModel] = .init()
         private var originalDataSource: [ProductModel] = .init()
-
     }
 }
 

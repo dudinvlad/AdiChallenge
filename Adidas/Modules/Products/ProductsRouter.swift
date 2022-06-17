@@ -16,13 +16,17 @@ extension Module {
         // MARK: - Dependencies
 
         weak var viewController: UIViewController!
+        private var productDetailsAssembly: ProductDetailsModule.ModuleAssemblying
 
-        required init() { }
+        required init(productDetails: ProductDetailsModule.ModuleAssemblying) {
+            self.productDetailsAssembly = productDetails
+        }
     }
 }
 
 extension Router: Module.RouterInput {
     func showProductsDetailScreen(with item: ProductModel) {
-        
+        productDetailsAssembly.product = item
+        viewController.navigationController?.pushViewController(productDetailsAssembly.assemble(), animated: true)
     }
 }

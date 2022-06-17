@@ -13,4 +13,10 @@ extension Style.Label {
         font: Style.Font.system14,
         numberOfLines: .zero
     )
+
+    static let productReviewLabel = ColoredLabel(
+        titleColor: .blue,
+        font: Style.Font.systemBold14,
+        numberOfLines: .zero
+    )
 }

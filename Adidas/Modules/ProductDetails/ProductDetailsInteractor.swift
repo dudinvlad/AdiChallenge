@@ -1,5 +1,5 @@
 //
-//  ProductsInteractor.swift
+//  ProductDetailsInteractor.swift
 //  Adidas
 //
 //  Created Vladislav Dudin on 16.06.2022.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-private typealias Module = ProductsModule
+private typealias Module = ProductDetailsModule
 private typealias Interactor = Module.Interactor
 
 extension Module {
@@ -16,20 +16,21 @@ extension Module {
         // MARK: - Dependencies
 
         weak var output: InteractorOutput!
-        let productService: ProductService
+        let productReviewService: ProductReviewService
 
-        required init(productService: ProductService) {
-            self.productService = productService
+        required init(productReviewService: ProductReviewService) {
+            self.productReviewService = productReviewService
         }
+
     }
 }
 
 extension Interactor: Module.InteractorInput {
-    func getProducts() {
-        productService.retrieveProducts { [weak self] result in
+    func retrieveProductReviews(_ productId: String) {
+        productReviewService.retrieveProductReviews(by: productId) { [weak self] result in
             switch result {
-            case .success(let response):
-                self?.output.gotProducts(response)
+            case .success(let reviews):
+                self?.output.gotProductReviews(reviews)
             case .failure(let error):
                 self?.output.failure(with: error.localizedDescription)
             }

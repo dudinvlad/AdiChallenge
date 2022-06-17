@@ -18,5 +18,16 @@ class BaseViewController: UIViewController {
     // MARK: - Privat
     private func initialSetup() {
         view.backgroundColor = .white
+        tapToCloseKeyboard()
+    }
+
+    private func tapToCloseKeyboard() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture)
+    }
+
+    @objc private func hideKeyboard() {
+        view.endEditing(true)
     }
 }

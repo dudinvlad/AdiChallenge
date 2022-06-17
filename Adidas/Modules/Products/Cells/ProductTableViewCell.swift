@@ -54,6 +54,24 @@ class ProductTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Public
+
+    func configurate(with item: ProductModel) {
+        productImageView.kf.indicatorType = .activity
+        productImageView.kf.setImage(
+            with: URL(string: item.imgUrl ?? ""),
+            placeholder: UIImage(),
+            options:
+                [.scaleFactor(UIScreen.main.scale),
+                 .transition(.fade(1))
+                ]
+        )
+        productNameLabel.text = item.name
+        productDescriptionLabel.text = item.description
+        productPriceLabel.text = item.priceDescription
+    }
+
+    // MARK: - Private
     private func intialSetup() {
         accessoryType = .disclosureIndicator
         contentView.addSubview(containerStack)
@@ -76,22 +94,5 @@ class ProductTableViewCell: UITableViewCell {
         productImageView.snp.makeConstraints { make in
             make.size.equalTo(70)
         }
-    }
-
-    // MARK: - Public
-
-    func configurate(with item: ProductModel) {
-        productImageView.kf.indicatorType = .activity
-        productImageView.kf.setImage(
-            with: URL(string: item.imgUrl ?? ""),
-            placeholder: UIImage(),
-            options:
-                [.scaleFactor(UIScreen.main.scale),
-                 .transition(.fade(1))
-                ]
-        )
-        productNameLabel.text = item.name
-        productDescriptionLabel.text = item.description
-        productPriceLabel.text = item.priceDescription
     }
 }

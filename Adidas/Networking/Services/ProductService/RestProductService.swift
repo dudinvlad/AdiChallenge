@@ -10,7 +10,7 @@ import Foundation
 struct RestProductService: ProductService, BaseRestService {
     var restClient: NetworkSessionProtocol
 
-    func retrieveProduct(completion: @escaping (Result<[ProductModel], Error>) -> Void) {
+    func retrieveProducts(completion: @escaping (Result<[ProductModel], Error>) -> Void) {
         guard let request = restClient.request(RequestRouter.Products.retrieveProducts) else {
             completion(.failure(URLError(.badURL)))
             return
