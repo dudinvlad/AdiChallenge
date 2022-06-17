@@ -1,0 +1,22 @@
+/* 
+  Localize.strings
+  Adidas
+
+  Created by Vladislav Dudin on 16.06.2022.
+  
+*/
+// MARK: - Products
+"productsNavigationTitle" = "Adidas";
+"productsSearchPlaceholder" = "Search";
+"noInternetError" = "Seems like you have no connection...";
+
+// MARK: - Product Details
+"productAddReviewButtonTitle" = "Add review";
+"productReviewTitle" = "Rating - ";
+"productDetailsNavigationTitle" = "Product Details";
+
+// MARK: - Add Review
+"addReviewTextViewPlaceholder" = "Write a review here...";
+"addReviewPlaceholder" = "Rating";
+"addReviewSendButtonTitle" = "Send Review";
+"addReviewNavigationTitle" = "Add Review";
