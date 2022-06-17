@@ -27,6 +27,13 @@ extension Module {
 
 extension Interactor: Module.InteractorInput {
     func sendReview(with text: String, rating: Int, productId: String?) {
+        guard
+            NetworkClient.isConnectedToInternet()
+        else {
+            output.failure(with: ProductsModule.Localize.noInternetError.localized)
+            return
+        }
+
         let reviewModel = ProductReviewModel(productId: productId, locale: "en", rating: rating, text: text)
         productReviewService.sendProductReview(review: reviewModel) { [weak self] result in
             switch result {

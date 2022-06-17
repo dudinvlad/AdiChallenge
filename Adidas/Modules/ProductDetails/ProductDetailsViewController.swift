@@ -130,7 +130,7 @@ private extension Controller {
             make.height.equalTo(250)
         }
         tableView.snp.makeConstraints { make in
-            make.height.equalTo(300)
+            make.height.equalTo(200)
         }
     }
 }

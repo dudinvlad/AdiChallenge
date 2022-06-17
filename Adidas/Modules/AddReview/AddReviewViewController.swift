@@ -32,7 +32,17 @@ extension Module {
         private lazy var inputTextField: UITextField = build {
             $0.borderStyle = .roundedRect
             $0.delegate = self
-            $0.placeholder = Localize.addReviewTextFieldPlaceholder.localized
+            $0.placeholder = Localize.addReviewTextViewPlaceholder.localized
+        }
+
+        private lazy var reviewTextView: UITextView = build {
+            $0.font = Style.Font.system14
+            $0.cornerRadius(5)
+            $0.text = Localize.addReviewTextViewPlaceholder.localized
+            $0.textColor = .lightGray
+            $0.selectedTextRange = $0.textRange(from: $0.beginningOfDocument, to: $0.beginningOfDocument)
+            $0.border(width: 0.5, color: .lightGray)
+            $0.delegate = self
         }
 
         private lazy var ratingTextField: UITextField = build {
@@ -98,7 +108,7 @@ private extension View {
     private func initialSetup() {
         view.addSubview(containerStack)
         containerStack.addArrangedSubview(productImageView)
-        containerStack.addArrangedSubview(inputTextField)
+        containerStack.addArrangedSubview(reviewTextView)
         containerStack.setCustomSpacing(20, after: inputTextField)
         containerStack.addArrangedSubview(ratingTextField)
         containerStack.addArrangedSubview(sendReviewButton)
@@ -116,6 +126,9 @@ private extension View {
         }
         productImageView.snp.makeConstraints { make in
             make.height.equalTo(150)
+        }
+        reviewTextView.snp.makeConstraints { make in
+            make.height.equalTo(70)
         }
         sendReviewButton.snp.makeConstraints { make in
             make.height.equalTo(45)
@@ -155,5 +168,32 @@ extension View: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+    }
+}
+
+// MARK: - UITextViewDelegate
+extension View: UITextViewDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let currentText: String = textView.text
+        let updatedText = (currentText as NSString).replacingCharacters(in: range, with: text)
+
+        if updatedText.isEmpty {
+            textView.text = AddReviewModule.Localize.addReviewTextViewPlaceholder.localized
+            textView.textColor = UIColor.lightGray
+            textView.selectedTextRange = textView.textRange(from: textView.beginningOfDocument, to: textView.beginningOfDocument)
+        } else if textView.textColor == UIColor.lightGray && !text.isEmpty {
+            textView.textColor = UIColor.black
+            textView.text = text
+        } else {
+            return true
+        }
+        return false
+    }
+    func textViewDidChangeSelection(_ textView: UITextView) {
+        if self.view.window != nil {
+            if textView.textColor == UIColor.lightGray {
+                textView.selectedTextRange = textView.textRange(from: textView.beginningOfDocument, to: textView.beginningOfDocument)
+            }
+        }
     }
 }

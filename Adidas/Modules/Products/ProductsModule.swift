@@ -19,6 +19,7 @@ struct ProductsModule {
     enum Localize: String, Localizable {
         case productsNavigationTitle
         case productsSearchPlaceholder
+        case noInternetError
     }
 }
 
