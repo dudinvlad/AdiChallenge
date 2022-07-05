@@ -54,6 +54,8 @@
 		022A30DB285BD943005847C6 /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D5285BD943005847C6 /* AddReviewViewController.swift */; };
 		022A30DC285BD943005847C6 /* AddReviewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D6285BD943005847C6 /* AddReviewAssembly.swift */; };
 		022A30DD285BD943005847C6 /* AddReviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022A30D7285BD943005847C6 /* AddReviewInteractor.swift */; };
+		025273132874477E003710DA /* MockProductReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025273122874477E003710DA /* MockProductReviewService.swift */; };
+		02527315287476DA003710DA /* MockProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02527314287476DA003710DA /* MockProductService.swift */; };
 		029688AF2858D68A005510F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029688AE2858D68A005510F5 /* AppDelegate.swift */; };
 		029688B12858D68A005510F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029688B02858D68A005510F5 /* SceneDelegate.swift */; };
 		029688B92858D68A005510F5 /* Adidas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 029688B72858D68A005510F5 /* Adidas.xcdatamodeld */; };
@@ -128,6 +130,8 @@
 		022A30D5285BD943005847C6 /* AddReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
 		022A30D6285BD943005847C6 /* AddReviewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewAssembly.swift; sourceTree = "<group>"; };
 		022A30D7285BD943005847C6 /* AddReviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewInteractor.swift; sourceTree = "<group>"; };
+		025273122874477E003710DA /* MockProductReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductReviewService.swift; sourceTree = "<group>"; };
+		02527314287476DA003710DA /* MockProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductService.swift; sourceTree = "<group>"; };
 		029688AB2858D68A005510F5 /* Adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		029688AE2858D68A005510F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		029688B02858D68A005510F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -303,6 +307,7 @@
 			children = (
 				022A308E285B5930005847C6 /* ProductService.swift */,
 				022A3093285B5B49005847C6 /* RestProductService.swift */,
+				02527314287476DA003710DA /* MockProductService.swift */,
 			);
 			path = ProductService;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 			children = (
 				022A30CB285BCA55005847C6 /* ProductReviewService.swift */,
 				022A30C9285BCA41005847C6 /* RestProductReviewService.swift */,
+				025273122874477E003710DA /* MockProductReviewService.swift */,
 			);
 			path = ProductReviewService;
 			sourceTree = "<group>";
@@ -626,6 +632,7 @@
 				022A30BE285BB51C005847C6 /* ProductDetailsPresenter.swift in Sources */,
 				022A3089285B58B8005847C6 /* ProductsViewController.swift in Sources */,
 				022A30A5285BA445005847C6 /* Style+Label.swift in Sources */,
+				025273132874477E003710DA /* MockProductReviewService.swift in Sources */,
 				029688AF2858D68A005510F5 /* AppDelegate.swift in Sources */,
 				022A3094285B5B49005847C6 /* RestProductService.swift in Sources */,
 				022A30A0285B9E7B005847C6 /* Cells+Register.swift in Sources */,
@@ -633,6 +640,7 @@
 				022A3076285B4C0D005847C6 /* NetworkRouterProtocol.swift in Sources */,
 				022A3062285A7B7C005847C6 /* BaseViewController.swift in Sources */,
 				022A3065285B2F0B005847C6 /* BaseControllerProtocols.swift in Sources */,
+				02527315287476DA003710DA /* MockProductService.swift in Sources */,
 				022A308F285B5930005847C6 /* ProductService.swift in Sources */,
 				022A30BD285BB51C005847C6 /* ProductDetailsModule.swift in Sources */,
 				022A30C7285BC9CA005847C6 /* ProductReviewModel.swift in Sources */,
@@ -834,6 +842,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -861,6 +870,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

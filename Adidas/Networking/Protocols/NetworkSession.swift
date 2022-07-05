@@ -80,7 +80,7 @@ class NetworkSession: NetworkSessionProtocol {
     }
 }
 
-private extension Encodable {
+extension Encodable {
     func asDictionary(encoder: JSONEncoder) -> [String: Any]? {
         do {
             let data = try encoder.encode(self)
