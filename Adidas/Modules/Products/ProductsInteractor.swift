@@ -26,6 +26,13 @@ extension Module {
 
 extension Interactor: Module.InteractorInput {
     func getProducts() {
+        guard
+            NetworkClient.isConnectedToInternet()
+        else {
+            output.failure(with: ProductsModule.Localize.noInternetError.localized)
+            return
+        }
+
         productService.retrieveProducts { [weak self] result in
             switch result {
             case .success(let response):

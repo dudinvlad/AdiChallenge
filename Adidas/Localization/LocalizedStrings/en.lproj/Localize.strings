@@ -8,6 +8,7 @@
 // MARK: - Products
 "productsNavigationTitle" = "Adidas";
 "productsSearchPlaceholder" = "Search";
+"noInternetError" = "Seems like you have no connection...";
 
 // MARK: - Product Details
 "productAddReviewButtonTitle" = "Add review";
@@ -15,7 +16,7 @@
 "productDetailsNavigationTitle" = "Product Details";
 
 // MARK: - Add Review
-"addReviewTextFieldPlaceholder" = "Write a review here...";
+"addReviewTextViewPlaceholder" = "Write a review here...";
 "addReviewPlaceholder" = "Rating";
 "addReviewSendButtonTitle" = "Send Review";
 "addReviewNavigationTitle" = "Add Review";

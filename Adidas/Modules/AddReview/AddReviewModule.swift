@@ -17,7 +17,7 @@ struct AddReviewModule {
     typealias RouterInput       = AddReviewRouterInputProtocol
 
     enum Localize: String, Localizable {
-        case addReviewTextFieldPlaceholder
+        case addReviewTextViewPlaceholder
         case addReviewPlaceholder
         case addReviewSendButtonTitle
         case addReviewNavigationTitle

@@ -27,6 +27,13 @@ extension Module {
 
 extension Interactor: Module.InteractorInput {
     func retrieveProductReviews(_ productId: String) {
+        guard
+            NetworkClient.isConnectedToInternet()
+        else {
+            output.failure(with: ProductsModule.Localize.noInternetError.localized)
+            return
+        }
+
         productReviewService.retrieveProductReviews(by: productId) { [weak self] result in
             switch result {
             case .success(let reviews):
